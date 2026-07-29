@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dpidtxwyrupej"]
 
 [ext_resource type="Script" uid="uid://yp60lu5k4ra1" path="res://addons/2026_07_31_gdp_load_scene_by_guid/script/guidload_build_project_paths_file.gd" id="1_psube"]
+[ext_resource type="Script" uid="uid://bl2bfhfo5msxg" path="res://addons/2026_07_31_gdp_load_scene_by_guid/script/guidload_load_level_from_guid_file.gd" id="2_alh7l"]
 
 [node name="DemoGenerateGuidFileRegister" type="Control" unique_id=1311978103]
 layout_mode = 3
@@ -15,6 +16,10 @@ script = ExtResource("1_psube")
 dico_splitter_in_file = null
 metadata/_custom_type_script = "uid://yp60lu5k4ra1"
 
+[node name="GuidLoadLevelFromGuidFile" type="Node" parent="." unique_id=1659623313]
+script = ExtResource("2_alh7l")
+metadata/_custom_type_script = "uid://bl2bfhfo5msxg"
+
 [node name="TextEdit" type="TextEdit" parent="." unique_id=793029067]
 layout_mode = 1
 anchors_preset = -1
@@ -24,4 +29,16 @@ offset_right = 8.0
 offset_bottom = 8.0
 metadata/_edit_use_anchors_ = true
 
+[node name="Button" type="Button" parent="." unique_id=672421504]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.8919753
+anchor_right = 0.2517361
+anchor_bottom = 0.95987654
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Listen To Keyboard Input"
+metadata/_edit_use_anchors_ = true
+
 [connection signal="on_guid_file_text_generated" from="GuidLoadBuildProjectPathsFile" to="TextEdit" method="set_text"]
+[connection signal="button_down" from="Button" to="GuidLoadLevelFromGuidFile" method="load_scene_from_guid" binds= ["CEmsTKbf5V5KU3eMmwLqZN4meMdgZxPvyJuhRsohi66h"]]

@@ -1,0 +1,3 @@
+Tcw1T9emsS52XLgLMW6WWDdtpJhGGjjHg6LB2YAwS79
+Generate a GUID-to-Scene dictionary.
+This demo shows how to generate a dictionary that maps GUIDs to their corresponding scene paths in the project, allowing scenes to be loaded by their GUID.
