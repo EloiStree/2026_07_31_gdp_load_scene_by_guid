@@ -19,3 +19,15 @@ In this setup, each folder should contain only one scene. This allows you to ren
 
 
 _Very, useful if you use NFC or bar-code scanner._
+
+
+
+Format: `guid.txt`   
+```
+9PuzTgJ89XkgFGfBZRsBVHMaDzHF1iLswWfG2wjeJMMb
+Short title to display in UI
+A short description to display in the menu explaining what this scene demonstrates in one line.
+
+Rest of the file is a small BBCode description for the RichText of the game engine.    
+A description of what the scene should do.   
+```
