@@ -13,7 +13,6 @@ grow_vertical = 2
 
 [node name="GuidLoadBuildProjectPathsFile" type="Node" parent="." unique_id=1771706780]
 script = ExtResource("1_psube")
-dico_splitter_in_file = null
 metadata/_custom_type_script = "uid://yp60lu5k4ra1"
 
 [node name="GuidLoadLevelFromGuidFile" type="Node" parent="." unique_id=1659623313]
