@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dpidtxwyrupej"]
+
+[ext_resource type="Script" uid="uid://yp60lu5k4ra1" path="res://addons/2026_07_31_gdp_load_scene_by_guid/script/guidload_build_project_paths_file.gd" id="1_psube"]
+
+[node name="DemoGenerateGuidFileRegister" type="Control" unique_id=1311978103]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GuidLoadBuildProjectPathsFile" type="Node" parent="." unique_id=1771706780]
+script = ExtResource("1_psube")
+dico_splitter_in_file = null
+metadata/_custom_type_script = "uid://yp60lu5k4ra1"
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=793029067]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.9904514
+anchor_bottom = 0.97993827
+offset_right = 8.0
+offset_bottom = 8.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="on_guid_file_text_generated" from="GuidLoadBuildProjectPathsFile" to="TextEdit" method="set_text"]
