@@ -1,3 +1,8 @@
+
+```
+git submodule add https://github.com/EloiStree/2026_07_31_gdp_load_scene_by_guid.git addons/2026_07_31_gdp_load_scene_by_guid
+```
+
 # 2026_07_31_gdp_load_scene_by_guid
 
 > Tool to generate a list of scene paths in your project and load them by GUID.
