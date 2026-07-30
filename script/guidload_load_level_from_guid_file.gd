@@ -16,7 +16,8 @@ func load_scene_from_guid(guid:String):
 			push_error("Failed to load scene resource at path: " + scene_path)
 	else:
 		push_error("GUID not found in dictionary: " + guid)
-
+		
+		
 func _read_dictonnary_file() -> Dictionary:
 	var dico:Dictionary = {}
 	var file = FileAccess.open(dictionary_res_file_path, FileAccess.READ)
