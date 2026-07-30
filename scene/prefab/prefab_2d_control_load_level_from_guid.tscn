@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://ctrjp4fi4ywn8"]
+
+[ext_resource type="Script" uid="uid://c3yeyaqvsrddr" path="res://addons/2026_07_31_gdp_load_scene_by_guid/script/guidload_generate_buttons_to_load_scene.gd" id="1_dgel7"]
+
+[node name="Control Load level From GUID" type="Control" unique_id=189677241]
+layout_mode = 3
+anchor_left = 0.423
+anchor_right = 0.9760417
+anchor_bottom = 0.9990001
+offset_left = 0.8399048
+offset_top = 3.0
+offset_right = 40.0
+offset_bottom = 0.079956055
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=2072034796]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=1994431869]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
+
+[node name="Button" type="Button" parent="ScrollContainer/VBoxContainer" unique_id=636191970]
+visible = false
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+size_flags_vertical = 3
+text = "Test"
+alignment = 0
+
+[node name="GuidLoadGenerateButtonsToLoadScene" type="Node" parent="." unique_id=1488639290 node_paths=PackedStringArray("_prefab_button_to_load", "_parent_to_create_in")]
+script = ExtResource("1_dgel7")
+_prefab_button_to_load = NodePath("../ScrollContainer/VBoxContainer/Button")
+_parent_to_create_in = NodePath("../ScrollContainer/VBoxContainer")
+metadata/_custom_type_script = "uid://c3yeyaqvsrddr"

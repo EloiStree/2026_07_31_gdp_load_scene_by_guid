@@ -1,22 +1,27 @@
 class_name GuidLoadLevelFromGuidFile
 extends Node
 
+signal on_found_guid_to_load()
+signal on_not_found_guid_to_load()
+
 @export var dictionary_res_file_path:String = "res://guid_to_scene_path.txt"
 @export var splitter_in_file:String = "|"
 
-
-func load_scene_from_guid(guid:String):
+func load_scene_from_guid(guid:String)->bool:
 	var dico:Dictionary = _read_dictonnary_file()
 	if dico.has(guid):
 		var scene_path = dico[guid]
 		var scene_resource = ResourceLoader.load(scene_path)
 		if scene_resource:
 			get_tree().change_scene_to_file(scene_path)
+			on_found_guid_to_load.emit()
+			return true
 		else:
 			push_error("Failed to load scene resource at path: " + scene_path)
 	else:
-		push_error("GUID not found in dictionary: " + guid)
-		
+		push_warning("GUID not found in dictionary: " + guid)
+	on_not_found_guid_to_load.emit()
+	return false
 		
 func _read_dictonnary_file() -> Dictionary:
 	var dico:Dictionary = {}
