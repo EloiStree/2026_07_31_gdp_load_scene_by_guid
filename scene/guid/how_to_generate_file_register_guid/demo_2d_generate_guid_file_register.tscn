@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://yp60lu5k4ra1" path="res://addons/2026_07_31_gdp_load_scene_by_guid/script/guidload_build_project_paths_file.gd" id="1_psube"]
 [ext_resource type="Script" uid="uid://bl2bfhfo5msxg" path="res://addons/2026_07_31_gdp_load_scene_by_guid/script/guidload_load_level_from_guid_file.gd" id="2_alh7l"]
+[ext_resource type="Script" uid="uid://ccyqbr8uqahev" path="res://addons/2026_07_31_gdp_load_scene_by_guid/script/guidload_load_project_guid_txt_as_static.gd" id="3_55wwm"]
+[ext_resource type="PackedScene" uid="uid://ctrjp4fi4ywn8" path="res://addons/2026_07_31_gdp_load_scene_by_guid/scene/prefab/prefab_2d_control_load_level_from_guid.tscn" id="4_axp70"]
 
 [node name="DemoGenerateGuidFileRegister" type="Control" unique_id=1311978103]
 layout_mode = 3
@@ -22,10 +24,13 @@ metadata/_custom_type_script = "uid://bl2bfhfo5msxg"
 [node name="TextEdit" type="TextEdit" parent="." unique_id=793029067]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.9904514
-anchor_bottom = 0.97993827
+anchor_right = 0.41041666
+anchor_bottom = 0.9799383
 offset_right = 8.0
 offset_bottom = 8.0
+text = "Tcw1T9emsS52XLgLMW6WWDdtpJhGGjjHg6LB2YAwS79|res:///addons/2026_07_31_gdp_load_scene_by_guid/scene/guid/how_to_generate_file_register_guid/demo_2d_generate_guid_file_register.tscn
+EXXwvLqyvBpdjzb27mVrBuwtkTvKRTzDKyvyMKfo6ujm|res:///addons/2026_07_20_gdp_get_ipv4_info/scene/guid/demo_get_ipv4_info/demo_ui2d_ipv4_fetch.tscn
+"
 metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="." unique_id=672421504]
@@ -38,6 +43,14 @@ offset_right = 8.0
 offset_bottom = 8.0
 text = "Listen To Keyboard Input"
 metadata/_edit_use_anchors_ = true
+
+[node name="GuidLoadProjectGuidTxtAsStatic" type="Node" parent="." unique_id=904713075]
+script = ExtResource("3_55wwm")
+_print_result_at_end = false
+metadata/_custom_type_script = "uid://ccyqbr8uqahev"
+
+[node name="Control Load level From GUID" parent="." unique_id=189677241 instance=ExtResource("4_axp70")]
+layout_mode = 1
 
 [connection signal="on_guid_file_text_generated" from="GuidLoadBuildProjectPathsFile" to="TextEdit" method="set_text"]
 [connection signal="button_down" from="Button" to="GuidLoadLevelFromGuidFile" method="load_scene_from_guid" binds= ["CEmsTKbf5V5KU3eMmwLqZN4meMdgZxPvyJuhRsohi66h"]]
