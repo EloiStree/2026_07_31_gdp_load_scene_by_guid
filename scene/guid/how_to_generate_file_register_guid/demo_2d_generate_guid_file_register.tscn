@@ -28,8 +28,11 @@ anchor_right = 0.41041666
 anchor_bottom = 0.9799383
 offset_right = 8.0
 offset_bottom = 8.0
-text = "Tcw1T9emsS52XLgLMW6WWDdtpJhGGjjHg6LB2YAwS79|res:///addons/2026_07_31_gdp_load_scene_by_guid/scene/guid/how_to_generate_file_register_guid/demo_2d_generate_guid_file_register.tscn
-EXXwvLqyvBpdjzb27mVrBuwtkTvKRTzDKyvyMKfo6ujm|res:///addons/2026_07_20_gdp_get_ipv4_info/scene/guid/demo_get_ipv4_info/demo_ui2d_ipv4_fetch.tscn
+text = "CEmsTKbf5V5KU3eMmwLqZN4meMdgZxPvyJuhRsohi66h|res:///addons/2026_01_03_gdp_input_to_primitive/scene/guid/demo_2d_listen_to_keyboard_input/demo_listen_keyboard_input.tscn
+9PuzTgJ89XkgFGfBZRsBVHMaDzHF1iLswWfG2wjeJMMb|res:///addons/2026_01_03_gdp_input_to_primitive/scene/guid/demo_2d_listen_to_nfc_bar_code/demo_2d_listen_to_nfc_bar_code.tscn
+G8vbhpSjwc8TMG8chY34ZyM2FRuLkD6HV8gj7EjS2mJh|res:///addons/2026_04_27_gdp_oled_128x64/scene/guid/demo_udp_listen_to_128x64/demo_oled_128x64_udp_display.tscn
+AUQ3bfGfRb2erXwYXSjDqZ9GRTeVcufYMaMYNKRdzoug|res:///addons/2026_07_29_gdp_display_git_module_info/scene/guid/display_git_info_and_module/demo_display_git_info_and_module.tscn
+Tcw1T9emsS52XLgLMW6WWDdtpJhGGjjHg6LB2YAwS79|res:///addons/2026_07_31_gdp_load_scene_by_guid/scene/guid/how_to_generate_file_register_guid/demo_2d_generate_guid_file_register.tscn
 "
 metadata/_edit_use_anchors_ = true
 
